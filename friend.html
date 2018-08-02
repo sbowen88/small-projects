@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Sunflower:300');
+        .home-carousel {
+            display: table;
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+
+        .home-carousel-item {
+            display: table-cell;
+            position: relative;
+        }
+
+        .home-carousel-item:hover {
+            background: rgba( 0, 0, 0, 0.5)
+        }
+
+        .home-carousel-item img {
+            display: block;
+            height: auto;
+            position: relative;
+            width: 100%;
+        }
+
+
+        .home-carousel-item-title {
+            display: block;
+            color: #ffffff;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: bold;
+            height: 100%;
+            left: 0px;
+            letter-spacing: 1px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+
+        .home-carousel-item-title:hover {
+            background: rgba( 0, 0, 0, 0.5);
+        }
+
+        .home-carousel-item span {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.5s linear;
+        }
+
+        .home-carousel-item:hover span {
+            visibility: visible;
+            opacity: 1;
+            color: white;
+            font-size: 40px;
+            font-family: 'Sunflower',Trebuchet, "Helvetica Neue",
+            Helvetica, Arial, "Lucida Grande", sans-serif;
+        }
+
+        .main-content {
+            padding: 0px;
+        }
+
+        .rte {
+            margin-bottom: 0px;
+        }
+
+        .rte>div {
+            margin-bottom: 0px;
+        }
+
+
+        #shopify-section-1488981031174 .wrapper {
+            max-width: 100%;
+            padding: 0px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .home-carousel {
+                display: block;
+            }
+            .home-carousel-item {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .home-carousel-item:hover span {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home-carousel">
+        <div class="home-carousel-item">
+            <a href="/products/mk-1-camera-case-new">
+                <div class="home-carousel-item-title">
+                    <span class="blue_sign_span">BLUESIGN</span>
+                </div>
+                <img alt="Bluesign" src="https://cdn.shopify.com/s/files/1/1600/6021/files/Bluesign-Image.jpg?15576164818645514928">
+            </a>
+        </div>
+        <div class="home-carousel-item">
+            <a href="/blogs/blog/boundary-photo-feature-02-vincent-grand">
+                <div class="home-carousel-item-title">
+                    <span>PHOTO FEATURE</span>
+                </div>
+                <img alt="Departure" src="https://cdn.shopify.com/s/files/1/1600/6021/files/Departure-07.jpg?5187042801146481840">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
