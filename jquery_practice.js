@@ -68,3 +68,11 @@ $(document).ready(() => {
     }).on('mouseleave', ()=>{
       $('.product-photo').removeClass('photo-active')
     })
+
+    //event target
+    $('.product-photo').on('mouseenter', (event) => {
+        $(event.currentTarget).addClass('photo-active')
+      }).on('mouseleave', (event) => {
+        $(event.currentTarget).removeClass('photo-active')
+      })
+      
