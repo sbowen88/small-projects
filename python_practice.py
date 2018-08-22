@@ -81,3 +81,17 @@ def compute_bill(food):
     total += prices[item]
     
   return total
+
+  """
+Python
+Rock Paper Scissors Game
+"""
+from random import randit
+
+options = ["ROCK", "PAPER", "SCISSORS"]
+
+message = {
+  "tie": "Yawn it's a tie",
+  "won": "Yay you won!", 
+  "lost": "Aww you lost!"
+}
