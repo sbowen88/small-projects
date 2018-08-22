@@ -86,7 +86,7 @@ def compute_bill(food):
 Python
 Rock Paper Scissors Game
 """
-from random import randit
+from random import randint
 
 options = ["ROCK", "PAPER", "SCISSORS"]
 
@@ -114,6 +114,7 @@ def play_RPS():
   user_choice = raw_input("Enter Rock, Paper, or Scissors: ")
   user_choice = user_choice.upper()
   computer_choice = options[randint(0, 2)]
+  decide_winner(user_choice, computer_choice)
   
   
 play_RPS()
