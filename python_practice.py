@@ -145,3 +145,9 @@ for student in students:
   print student["homework"]
   print student["quizzes"]
   print student["tests"]
+
+# Add your function below!
+def average(numbers):
+  total = sum(numbers)
+  total = float(total)
+  return total/len(numbers)
