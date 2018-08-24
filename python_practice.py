@@ -205,3 +205,15 @@ ship_row = random_row(board)
 ship_col = random_col(board)
 
 # Add your code below!
+
+#Pressure formula
+
+def solution(molar_mass1, molar_mass2, given_mass1, given_mass2, volume, temp) :
+    # your code goes here
+    #PV = nRT
+    pressure_1 = ((given_mass1/molar_mass1)*0.082*(temp+273.15))/volume
+    pressure_2 = ((given_mass2/molar_mass2)*0.082*(temp+273.15))/volume
+
+    pressure = pressure_1 + pressure_2
+
+    return pressure
