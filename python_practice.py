@@ -217,3 +217,18 @@ def solution(molar_mass1, molar_mass2, given_mass1, given_mass2, volume, temp) :
     pressure = pressure_1 + pressure_2
 
     return pressure
+
+#bit counter function
+
+def range_bit_count(a, b):
+    #coding and coding..
+    list = []
+    for i in range(a,b+1):
+        i = format(i, "b")
+        list.append(i)
+    count = "".join(list)
+    total = count.count("1")
+    print (total)
+
+range_bit_count(28, 36)
+# print (format(5, "b"))
