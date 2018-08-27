@@ -213,6 +213,10 @@ print ship_col
 guess_row = int(raw_input("Guess Row:"))
 guess_col = int(raw_input("Guess Col:"))
 
+#response if guess is correct
+if guess_row == ship_row and guess_col == ship_col:
+  print "Congratulations!  You sank my battleship!"
+
 #Pressure formula
 
 def solution(molar_mass1, molar_mass2, given_mass1, given_mass2, volume, temp) :
