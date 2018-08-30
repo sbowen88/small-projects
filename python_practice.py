@@ -208,25 +208,24 @@ ship_col = random_col(board)
 print ship_row
 print ship_col
 
-# Add your code below!
-# Add your code below!
-guess_row = int(raw_input("Guess Row:"))
-guess_col = int(raw_input("Guess Col:"))
+# don't forget to properly indent!
+for turn in range(4):
+  print "Turn", turn + 1
+  guess_row = int(raw_input("Guess Row: "))
+  guess_col = int(raw_input("Guess Col: "))
 
-#response if guess is correct
-if guess_row == ship_row and guess_col == ship_col:
-  print "Congratulations!  You sank my battleship!"
-#incorrect response
-else:
-  if guess_row not in range(5) or \
-    guess_col not in range(5):
-    print "Oops, that's not even in the ocean."
-  elif board[guess_row][guess_col] == "X":
-    print "You guessed that one already."
+  if guess_row == ship_row and guess_col == ship_col:
+    print "Congratulations! You sank my battleship!"   
   else:
-    print "You missed my battleship!"
-    board[guess_row][guess_col] = "X"
-  print_board(board)
+    if guess_row not in range(5) or \
+      guess_col not in range(5):
+      print "Oops, that's not even in the ocean."
+    elif board[guess_row][guess_col] == "X":
+      print( "You guessed that one already." )
+    else:
+      print "You missed my battleship!"
+      board[guess_row][guess_col] = "X"
+    print_board(board)
 
 #Pressure formula
 
