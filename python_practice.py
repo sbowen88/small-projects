@@ -229,6 +229,12 @@ for turn in range(4):
     print_board(board)
   if turn == 3:
     print "Game Over"
+#While loop
+num = 1
+
+while num < 11:  # Fill in the condition
+ print (num ** 2)
+ num += 1   
 
 #Pressure formula
 
