@@ -320,3 +320,11 @@ def is_int(x):
   absolute = abs(x)
   rounded = round(absolute)
   return absolute - rounded == 0
+
+#factorial function
+def factorial(x):
+  c = x-1
+  while c > 0:
+    x = c * x
+    c -=1
+  return x
