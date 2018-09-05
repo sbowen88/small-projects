@@ -376,3 +376,11 @@ def purify(stuff):
     if i  % 2 == 0:
       new_list.append(i)
   return new_list
+  
+#product
+
+def product(stuff):
+  product = 1
+  for i in stuff:
+    product *= i
+  return product
