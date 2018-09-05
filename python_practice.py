@@ -361,3 +361,10 @@ def censor(text, word):
     result =' '.join(words)
 
     return result
+#count function
+def count(sequence, item):
+    count = 0
+    for i in sequence:
+        if i == item:
+            count += 1
+    return count    
