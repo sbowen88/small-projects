@@ -337,3 +337,13 @@ def reverse(text):
         word = word + text[l]
         l -= 1
     return word
+
+#scrabble
+def scrabble_score(word):
+  word = word.lower()
+  total = 0
+  for letter in word:
+    for leter in score:
+      if letter == leter:
+        total = total + score[leter]
+  return total
