@@ -314,3 +314,9 @@ def range_bit_count(a, b):
 
 range_bit_count(28, 36)
 # print (format(5, "b"))
+
+#returns whole number
+def is_int(x):
+  absolute = abs(x)
+  rounded = round(absolute)
+  return absolute - rounded == 0
