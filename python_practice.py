@@ -236,6 +236,11 @@ while num < 11:  # Fill in the condition
  print (num ** 2)
  num += 1   
 
+choice = raw_input('Enjoying the course? (y/n)')
+
+while choice != 'y' and choice != 'n':  # Fill in the condition (before the colon)
+  choice = raw_input("Sorry, I didn't catch that. Enter again: ")
+
 #Pressure formula
 
 def solution(molar_mass1, molar_mass2, given_mass1, given_mass2, volume, temp) :
