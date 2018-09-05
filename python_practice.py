@@ -247,6 +247,15 @@ while count < 10: # Add a colon
   print count
   count += 1
   # Increment count
+#break implemented
+count = 0
+
+while True:
+  print count
+  count += 1
+  if count >= 10:
+    break
+
 #Pressure formula
 
 def solution(molar_mass1, molar_mass2, given_mass1, given_mass2, volume, temp) :
