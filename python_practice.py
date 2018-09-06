@@ -461,3 +461,7 @@ print my_dict.values()
 
 for key in my_dict:
   print key, my_dict[key]
+
+#building custom lists
+evens_to_50 = [i for i in range(51) if i % 2 == 0]
+print evens_to_50
