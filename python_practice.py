@@ -452,3 +452,12 @@ def grades_std_deviation(variance):
 variance = grades_variance(grades)
 
 print grades_std_deviation(variance)
+
+#printing key values
+my_dict = {"name":"Jeff", "Age": 40, "height": 72}
+
+print my_dict.keys()
+print my_dict.values()
+
+for key in my_dict:
+  print key, my_dict[key]
