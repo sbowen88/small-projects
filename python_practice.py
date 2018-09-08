@@ -532,3 +532,11 @@ class Car(object):
 my_car = Car("DeLorean", "silver", 88)
 
 my_car.display_car()
+
+#opening and closing files
+with open("text.txt", "r+") as my_file:
+  my_file.write("sup g?")
+  
+if my_file.closed != True:
+  my_file.close()
+print my_file.closed
