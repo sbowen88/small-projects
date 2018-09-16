@@ -4,3 +4,6 @@
 # write your code in this window.
 
 echo "Hello, World!";
+
+FILELIST=`ls`
+FileWithTimeStamp=/tmp/my-dir/file_$(/bin/date +%Y-%m-%d).txt
