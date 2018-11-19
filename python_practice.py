@@ -558,3 +558,14 @@ my_age = calculate_age(2018, 1993)
 dads_age = calculate_age(2018, 1953)
 
 print("I am " + str(my_age) + " years old and my dad is " + str(dads_age) + " years old")
+
+#Simple function to determine if three sides can make a triangle
+def is_triangle(a, b, c):
+    if a + b <= c:
+        return False 
+    elif b + c <= a:
+        return False
+    elif c + a <= b:
+        return False
+    else:
+        return True
